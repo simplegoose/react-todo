@@ -1,0 +1,36 @@
+@import './mixins/flex.scss';
+@import './mixins/colors.scss';
+
+.form {
+  @include flex(row, 0, center, center);
+  margin: 1rem 1rem 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px #ababab;
+
+  input[type="text"] {
+    flex-basis: 95%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  button {
+    border: 0;
+    background: inherit;
+    color: #ababab;
+    flex-basis: 5%;
+    font-size: 1.5rem;
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+}
+
+.alert {
+  padding: 0.25rem 1rem 1rem;
+  @include danger(inherit, rgb(255, 109, 109));
+  font-size: 0.8rem;
+}

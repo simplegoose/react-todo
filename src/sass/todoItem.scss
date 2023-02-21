@@ -1,0 +1,41 @@
+@import './mixins/flex.scss';
+
+.todo {
+  background-color: rgba($color: #989898, $alpha: 0.4);
+  border-bottom: 1px solid #ffffff;
+}
+
+.view {
+  @include flex(row, 0.5rem, center, space-between);
+  width: 100%;
+  padding: 1rem;
+  
+  input[type="check"] {
+    flex: 1;
+  }
+  
+  span {
+    flex: 12;
+  }
+  
+  svg {
+    color: #353535;
+    flex: 1;
+  }
+
+  .strike-through {
+    font-style: italic;
+    text-decoration: line-through;
+  }
+}
+
+.edit {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
