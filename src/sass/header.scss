@@ -1,7 +1,8 @@
-@import './mixins/flex.scss';
+@import './mixins/flex';
 
 .header {
   @include flex(column, 1rem);
+
   color: #ababab;
 
   h1 {

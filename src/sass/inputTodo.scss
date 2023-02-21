@@ -1,8 +1,9 @@
-@import './mixins/flex.scss';
-@import './mixins/colors.scss';
+@import './mixins/flex';
+@import './mixins/colors';
 
 .form {
   @include flex(row, 0, center, center);
+
   margin: 1rem 1rem 0.5rem;
   padding: 1rem;
   border-radius: 8px;
@@ -26,11 +27,12 @@
       vertical-align: middle;
     }
   }
-
 }
 
 .alert {
   padding: 0.25rem 1rem 1rem;
+
   @include danger(inherit, rgb(255, 109, 109));
+
   font-size: 0.8rem;
 }

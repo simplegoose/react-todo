@@ -1,8 +1,8 @@
-@import 'header.scss';
-@import 'todoItem.scss';
-@import 'todoList.scss';
-@import 'inputTodo.scss';
-@import 'navbar.scss';
+@import 'header';
+@import 'todoItem';
+@import 'todoList';
+@import 'inputTodo';
+@import 'navbar';
 
 .App {
   max-width: 500px;

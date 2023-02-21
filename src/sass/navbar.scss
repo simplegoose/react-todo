@@ -1,8 +1,9 @@
-@import './mixins/flex.scss';
+@import './mixins/flex';
 
 nav {
   ul {
     @include flex(row, 2rem);
+
     width: 100%;
     list-style: none;
     padding: 1rem 2rem;
@@ -19,13 +20,15 @@ nav {
       ul {
         position: absolute;
         top: 140%;
+
         @include flex(column, 0.5rem, start);
-        box-shadow:  1px 1px 20px #ababab;
+
+        box-shadow: 1px 1px 20px #ababab;
         border-radius: 8px;
         width: auto;
         padding: 0.75rem;
         text-align: start;
-        background-color: #ffffff;
+        background-color: #fff;
 
         li {
           padding: 0.25rem;
