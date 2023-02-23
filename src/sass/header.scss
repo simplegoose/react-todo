@@ -1,0 +1,11 @@
+@import './mixins/flex';
+
+.header {
+  @include flex(column, 1rem);
+
+  color: #ababab;
+
+  h1 {
+    font-size: 3rem;
+  }
+}

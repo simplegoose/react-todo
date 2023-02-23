@@ -1,0 +1,4 @@
+@mixin danger($background: inherit, $color: inherit) {
+  background-color: $background;
+  color: $color;
+}
